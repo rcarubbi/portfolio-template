@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+  <script src="/assets/js/main.js" type="module"></script>
+</head>
+<body>
+  <header class="header__container">
+    <span class="header__span">Portfolio by</span>
+    <h1 class="header__name" data-fill-animate="" data-bohr-cms data-bohr-file="index.html" data-bohr-index="1" data-bohr-dist-file="index.html" data-bohr-dist-index="1">portfolio template</h1>
+    <nav class="nav__container">
+      <a href="#about" class="nav__link" data-fill-animate="">about</a>
+      <a href="#projects" class="nav__link" data-fill-animate="">projects</a>
+      <a href="#skills" class="nav__link" data-fill-animate="">skills</a>
+      <a href="#contact" class="nav__link" data-fill-animate="">contact</a>
+    </nav>
+  </header>
+  
+  <main class="main__container">
+    <section id="about" class="section__container about__section">
+      <h2 class="section__title">about</h2>
+      <div class="about__content">
+        <img src="/assets/img/profile.jpg" alt="Developer's profile image" class="about__image" />
+        <p class="about__text" data-bohr-cms data-bohr-file="index.html" data-bohr-index="2" data-bohr-dist-file="index.html" data-bohr-dist-index="2">Describe who you are, where you live, your graduations, preveius jobs, hobbies and whatever you believe is important that employers know about you.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section__container projects__section">
+      <h2 class="section__title">projects</h2>
+
+      <div id="project-carousel" class="project__carousel">
+        <div id="project-ring" class="project__ring">
+        </div>
+      </div>
+
+      <div id="project-details" class="project__detail">
+        <button id="project-close-btn" class="project__close">
+          <img width="30" height="30" src="/assets/svg/x-icon.svg" alt="Close button icon" />
+        </button>
+        <img id="project-detail-image" src="/assets/img/project-1.jpg" alt="Project image" class="project__image" />
+        <p id="project-text" class="project__text">Describe this project, whas it a college activity or an acctual job? What did you do ? link the website bellow if you can.</p>
+        
+        <div class="project__controls">
+          <button id="prev-project-btn" class="project__select-btn project__select-btn--prev">
+            <img src="/assets/svg/arrow.svg" alt="previous project button icon">
+          </button>
+          <a id="project-link" href="" target="_blank" class="project__link">visit site</a>
+          <button id="next-project-btn" class="project__select-btn project__select-btn--next">
+            <img src="/assets/svg/arrow.svg" alt="next project button icon">
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills" class="section__container skills__section">
+      <h2 class="section__title">skills</h2>
+      <ul class="skills__list">
+        <li class="skill__item">
+          <a target="_blank" href="https://www.w3schools.com/css/">
+            <img src="/assets/svg/skills/css-icon.svg" alt="Skill icon" class="skill__icon" />
+            <span class="skill__name">css</span>
+          </a>
+        </li>
+        <li class="skill__item">
+          <a target="_blank" href="https://www.gatsbyjs.com/">
+            <img src="/assets/svg/skills/gatsby-icon.svg" alt="Skill icon" class="skill__icon" />
+            <span class="skill__name">gatsby</span>
+          </a>
+        </li>
+        <li class="skill__item">
+          <a target="_blank" href="https://gulpjs.com/">
+            <img src="/assets/svg/skills/gulp-icon.svg" alt="Skill icon" class="skill__icon" />
+            <span class="skill__name">gulp</span>
+          </a>
+        </li>
+        <li class="skill__item">
+          <a target="_blank" href="https://www.w3schools.com/css/">
+            <img src="/assets/svg/skills/html-icon.svg" alt="Skill icon" class="skill__icon" />
+            <span class="skill__name">html</span>
+          </a>
+        </li>
+        <li class="skill__item">
+          <a target="_blank" href="https://www.w3schools.com/js/">
+            <img src="/assets/svg/skills/javascript-icon.svg" alt="Skill icon" class="skill__icon" />
+            <span class="skill__name">javascript</span>
+          </a>
+        </li>
+        <li class="skill__item">
+          <a target="_blank" href="https://www.python.org/">
+            <img src="/assets/svg/skills/python-icon.svg" alt="Skill icon" class="skill__icon" />
+            <span class="skill__name">python</span>
+          </a>
+        </li>
+        <li class="skill__item">
+          <a target="_blank" href="https://reactjs.org/">
+            <img src="/assets/svg/skills/react-icon.svg" alt="Skill icon" class="skill__icon" />
+            <span class="skill__name">react</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    
+    <section id="contact" class="section__container contact__section">
+      <h2 class="section__title">contact</h2>
+      <p class="contact__text">Did you like my work? Contact me to know more or follow me on social media.</p>
+      <div class="contact__list">
+        <a href="" class="contact__item">
+          <img src="/assets/svg/contacts/discord-icon.svg" alt="">
+        </a>
+
+        <a href="" class="contact__item">
+          <img src="/assets/svg/contacts/phone-icon.svg" alt="">
+        </a>
+
+        <a href="" class="contact__item">
+          <img src="/assets/svg/contacts/github-icon.svg" alt="">
+        </a>
+
+        <a href="" class="contact__item">
+          <img src="/assets/svg/contacts/instagram-icon.svg" alt="">
+        </a>
+
+        <a href="" class="contact__item">
+          <img src="/assets/svg/contacts/youtube-icon.svg" alt="">
+        </a>
+        
+      </div>
+    </section>
+  </main>
+  <footer class="footer__container">
+    <img src="/assets/svg/bohr.svg" alt="">
+  </footer>
+</body>
+</html>
